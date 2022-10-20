@@ -1,3 +1,33 @@
 @media screen and (max-width: 768px) {
 
+  .page-container {
+    flex-direction: column;
+    .menu-title {
+      display: none;
+    }
+    .menu {
+      padding: 10px;
+      width: auto;
+    }
+    
+    .menu-list {
+      display: flex;
+      justify-content: space-around;
+      .menu-list-item {
+        justify-content: center;
+        width: 100px;
+        padding: 15px;
+      }
+    }
+  }
+  .main {
+    .list {
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+      .card {
+        flex-direction: row;
+      }
+    }
+  }
 }

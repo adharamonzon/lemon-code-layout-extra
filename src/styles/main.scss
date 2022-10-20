@@ -1,9 +1,9 @@
 @import './variables';
-@import './media-queries';
 @import './components/header';
 @import './components/main';
 @import './components/footer';
 
+@import './media-queries';
 * {
   margin: 0;
   padding: 0;

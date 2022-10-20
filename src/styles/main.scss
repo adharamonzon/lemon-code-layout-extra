@@ -1,0 +1,12 @@
+@import './variables';
+@import './media-queries';
+@import './components/header';
+@import './components/main';
+@import './components/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}

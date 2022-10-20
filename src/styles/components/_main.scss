@@ -1,0 +1,61 @@
+
+.page-container {    
+  height: auto;
+  display: flex;
+  .menu {
+    background-color: $background-green;
+    color: $title-color;
+    width: 350px; 
+    position: relative;
+    padding-bottom: 30px;
+    nav { 
+      position: sticky;
+      top: 0;
+    }
+    .menu-title {
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px;
+    }
+    .menu-list {
+      background-color: $background-white;
+      color: black;
+      .menu-list-item {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        border: .3px solid grey;
+        height: 30px;
+      }
+    }
+  }
+  .main {
+    background-color: rgb(239, 235, 235);
+    padding-bottom: 30px;
+    .list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      .card {
+        margin: 40px 15px 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 150px;
+        background-color: $background-white;
+        border: 1px solid black;
+        border-radius: 5px;
+        .card-img {
+          border-radius: 50%;
+        }
+        .member-name {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

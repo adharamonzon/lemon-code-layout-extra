@@ -1,14 +1,25 @@
 @media screen and (max-width: 768px) {
-
+  
+  .toolbar {
+    visibility: hidden;
+  }
+  .page-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
   .page-container {
     flex-direction: column;
+    margin-top: -7px;
     .menu-title {
       display: none;
     }
     .menu {
       padding: 10px;
-      width: auto;
-    }
+      width: 100%;
+      position: sticky;
+      top: 0;
+      }
     
     .menu-list {
       display: flex;
@@ -19,14 +30,16 @@
         padding: 15px;
       }
     }
-  }
-  .main {
-    .list {
-      flex-direction: column;
-      align-items: center;
-      width: 70%;
-      .card {
-        flex-direction: row;
+    .main {
+      .list {
+        flex-direction: column;
+        align-items: center;
+
+        li.card {
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 400px;
+        } 
       }
     }
   }
